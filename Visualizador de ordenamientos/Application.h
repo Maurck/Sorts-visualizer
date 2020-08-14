@@ -7,26 +7,25 @@
 #include "SFML/Graphics.hpp"
 #include "Pilar.h"
 #include <iostream>
-#include <windows.h>
+#include <thread>
 
 using namespace std;
 using namespace sf;
 
-class Game
+class Application
 {
 private:
 	RenderWindow* window;
 	Event* gameEvent;
 	int maxPilars = 15;
 	vector<Pilar> pilars;
-	bool isOrdered;
-	int index_i, index_j;
 public:
-	Game(Vector2i res, string title);
+	Application(Vector2i res, string title);
 	void Draw();
+	void Start();
 	void Loop();
 	void ProcessEvents();
-	void InitPilars(float &position, Clock &clock);
+	void InitPilars();
 	void InitPilar(float &position);
-	void OrderPilars(int& index_i, int& index_j, Clock &clock);
+	void BubbleSort();
 };
