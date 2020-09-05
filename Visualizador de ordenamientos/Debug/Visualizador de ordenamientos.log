@@ -1,0 +1,7 @@
+﻿  Application.cpp
+C:\C++\Analisis y diseño de algoritmos\Sorts-visualizer\Visualizador de ordenamientos\Application.cpp(31,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\C++\Analisis y diseño de algoritmos\Sorts-visualizer\Visualizador de ordenamientos\Application.cpp(58,20): warning C4018: '<': no coinciden signed/unsigned
+C:\C++\Analisis y diseño de algoritmos\Sorts-visualizer\Visualizador de ordenamientos\Application.cpp(60,21): warning C4018: '<': no coinciden signed/unsigned
+  main.cpp
+  Generando código...
+  Visualizador de ordenamientos.vcxproj -> C:\C++\Analisis y diseño de algoritmos\Sorts-visualizer\Debug\Visualizador de ordenamientos.exe
