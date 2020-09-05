@@ -16,16 +16,25 @@ class Application
 {
 private:
 	RenderWindow* window;
-	Event* gameEvent;
+	Event* appEvent;
 	int maxPilars = 15;
+	chrono::duration<double> speed = 0.1s;
 	vector<Pilar> pilars;
+	Clock dtClock;
+	float dt;
+
+	void InitWindow(Vector2i res, string title);
+	void InitPilars();
+	void InitPilar(float& position);
 public:
 	Application(Vector2i res, string title);
+	~Application();
+
 	void Draw();
-	void Start();
-	void Loop();
-	void ProcessEvents();
-	void InitPilars();
-	void InitPilar(float &position);
 	void BubbleSort();
+	void Start();
+	void UpdateDt();
+	void UpdateEvents();
+	void Update();
+	void Loop();
 };
